@@ -5,12 +5,71 @@ html{
 }
 *,*:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
 }
+/* GENERALES*/
+header{
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 1rem;
+}
+footer p{
+    text-align: center;
+}
 a{
     text-decoration: none;
+}
+/*-----------------------------------------*/
+
+/* votar */
+
+.tbl-candidatos{    
+    width: 100%;
+    padding: 2rem;
+}
+.tbl-candidatos th,
+.tbl-candidatos td,
+.tbl-candidatos tr
+{
+    border: 1px solid black;
+}
+.partido{
+    display: flex;
+}
+.partido img {
+    max-width: 200px;
+}
+.partido div {
+    
+}
+.partido .partido-img{
+    flex-grow: 1;
+}
+.partido .partido-datos{
+    flex-grow: 4;
+}
+.partido button {
+    width: 100%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
 }
