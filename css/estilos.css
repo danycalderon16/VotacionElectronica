@@ -19,6 +19,9 @@ header{
     padding: 1rem;
     text-align: center;
 }
+section{
+    padding: 1rem;
+}
 footer{
     width: 100%;
     border-top: 1px solid black;
@@ -27,8 +30,14 @@ footer{
 footer p{
     text-align: center;
 }
+h2{
+    margin-top: 1rem;
+}
 a{
     text-decoration: none;
+}
+ul li{
+    margin-left: 2rem;
 }
 /*-----------------------------------------*/
 
@@ -36,7 +45,6 @@ a{
 
 .tbl-candidatos{    
     width: 100%;
-    padding: 2rem;
 }
 .tbl-candidatos th,
 .tbl-candidatos td,
@@ -58,6 +66,7 @@ a{
 }
 .partido .partido-datos{
     flex-grow: 4;
+    margin: 1rem;
 }
 .partido button {
     width: 100%;
