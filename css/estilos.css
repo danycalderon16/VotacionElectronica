@@ -25,7 +25,7 @@ header{
     padding: 2rem;
     text-align: center;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(94,94,117,1) 42%, rgba(142,141,141,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(94,94,117,1) 42%, rgba(142,141,141,1) 100%);
 }
 header h1 a {
     color:white;
@@ -260,7 +260,7 @@ ul li{
     flex-grow: 4;
     margin: 1rem;
 }
-.partido button {
+.btn-votar {
     width: 100%;
     background: 0 0;
     border: 1px solid green;
@@ -275,7 +275,7 @@ ul li{
     margin: 4px 2px;
     cursor: pointer;  
 }
-.partido button:hover{
+.btn-votar:hover{
     box-shadow: 0px 0px 8px 1px rgba(113,113,113,0.53);
     -webkit-box-shadow: 0px 0px 8px 1px rgba(113,113,113,0.53);
     -moz-box-shadow: 0px 0px 8px 1px rgba(113,113,113,0.53);
@@ -403,4 +403,119 @@ ul li{
 .votante .votante-datos{
     flex-grow: 4;
     margin: 1rem;
+}
+/*  Puestos  */
+.puestos{
+    margin-top:2rem ;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.puesto{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.puestos img{
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+}
+.puestos p {
+    margin-top: 1rem;
+    font-size: 2.6rem;
+    text-align: center;
+    
+}
+.puestos .btn-contenedor{
+    width: 100%;
+    padding: 1rem;
+}
+.puestos .btn-cartilla{
+    display: inline-block;
+    width: 100%;
+    background: white;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: 1px solid #111;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #111;
+    text-align: center;
+}
+.puestos .btn-cartilla:hover,
+.puesto:hover{
+    box-shadow: 0px 0px 8px 1px rgba(113,113,113,0.53);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(113,113,113,0.53);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(113,113,113,0.53);
+}
+
+
+/*---------Mapa---------*/
+select {
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   border:0!important;
+   background: #5c6664;
+   background-image: none;
+   flex: 1;
+   padding: 0 .5em;
+   color:#ffffff;
+   cursor:pointer;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+   display: none;
+}
+.select {
+   position: relative;
+   display: flex;
+   width: 20em;
+   height: 3em;
+   line-height: 3;
+   background: #5c6664;
+   overflow: hidden;
+   border-radius: .25em;
+   margin-right: 10px;
+}
+.select::after {
+   content: '\25BC';
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 1em;
+   background: #2b2e2e;
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
+}
+.select:hover::after {
+   color: #a785d4;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.centro{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 25px;
+}
+
+img{
+    transition:all 0.5s ease;
+}
+
+img:hover{
+    transform: scale(0.9);
 }
