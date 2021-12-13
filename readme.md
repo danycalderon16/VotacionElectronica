@@ -1,4 +1,7 @@
 # Votación en linea 
+¡¡¡ Link en firebase hosting !!! 
+- https://votacion-en-linea.web.app/
+
 ¡¡¡ Link en GithubPages !!!
 - https://danycalderon16.github.io/VotacionElectronica/
 ## Integrantes
@@ -22,3 +25,6 @@ Desarrollar una aplicación Web a forma de propuesta, enfocada hacía la realiza
     - Mostrar los datos del usuario que va a votar
 - Tener mayor precision y rapidez en el conteo de votos
 - Mapa con casillas para ir a votar personalmente.
+- Panel de administración
+    - Agregar partidos
+    - Agregar candidatos
